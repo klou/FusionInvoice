@@ -188,6 +188,40 @@
                 </table>
 
             </div>
+            
+            <div id="depense" class="widget">
+
+                <div class="widget-title">
+                    <h5><i class="icon-ok"></i>Cumul. des dépenses</h5>
+                </div>
+                
+                <table class="table table-striped no-margin">
+                    <thead>
+                        <tr>
+                            <th>Année courante <? echo date("Y"); ?></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><center><img src="/last.png"></center></td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <table class="table table-striped no-margin">
+                    <thead>
+                        <tr>
+                            <th>Comparaison</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                        	<td><center><img src="/vente.png"></center></td>
+                        </tr>
+                    </tbody>
+            	</table>
+
+       		</div>
 
         </div>
 
