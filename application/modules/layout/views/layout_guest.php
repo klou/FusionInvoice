@@ -18,9 +18,7 @@
 
 		<meta name="viewport" content="width=device-width,initial-scale=1">
 
-		<link rel="stylesheet" href="<?php echo base_url(); ?>assets/default/css/bootstrap.min.css">
 		<link rel="stylesheet" href="<?php echo base_url(); ?>assets/default/css/style.css">
-		<link rel="stylesheet" href="<?php echo base_url(); ?>assets/default/css/datepicker.css">
 
 		<script src="<?php echo base_url(); ?>assets/default/js/libs/modernizr-2.0.6.js"></script>
 		<script src="<?php echo base_url(); ?>assets/default/js/libs/jquery-1.7.1.min.js"></script>
@@ -44,7 +42,8 @@
 					</ul>
 
 					<ul class="nav pull-right settings">
-						<li><a href="<?php echo site_url('sessions/logout'); ?>" class="tip icon logout" data-original-title="<?php echo lang('logout'); ?>" data-placement="bottom"><img src="<?php echo base_url(); ?>assets/default/img/icons/logout.png"></a></li>
+                        <li><a href="#"><?php echo lang('welcome') . ' ' . $this->session->userdata('user_name'); ?></a></li>
+						<li><a href="<?php echo site_url('sessions/logout'); ?>" class="tip icon logout" data-original-title="<?php echo lang('logout'); ?>" data-placement="bottom"><i class="icon-off"></i></a></li>
 					</ul>
 
 				</div>

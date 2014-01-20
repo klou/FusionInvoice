@@ -12,7 +12,7 @@
 	<!-- Use the .htaccess and remove these lines to avoid edge case issues -->
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-	<title>Admin. Carson</title>
+	<title>FusionInvoice</title>
 	<meta name="description" content="">
 	<meta name="author" content="William G. Rivera">
 
@@ -22,7 +22,6 @@
 	<!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
 
 	<!-- CSS: implied media=all -->
-	<link rel="stylesheet" href="<?php echo base_url() . 'assets/default/css/bootstrap.min.css'; ?>">
 	<link rel="stylesheet" href="<?php echo base_url() . 'assets/default/css/style.css'; ?>">
 	<!-- end CSS-->
 
@@ -39,7 +38,7 @@
 
 </head>
 
-<body>
+<body style="overflow-y: visible;height:auto;">
 
 	<?php echo $content; ?>
 
