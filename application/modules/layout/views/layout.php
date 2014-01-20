@@ -125,6 +125,14 @@
 						</li>
 
 						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dépenses<b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li><?php echo anchor('depenses/form', "Nouvelle dépense"); ?></li>
+								<li><?php echo anchor('depenses/index', "Voir dépenses"); ?></li>
+							</ul>
+						</li>
+
+						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><?php echo lang('reports'); ?><b class="caret"></b></a>
 							<ul class="dropdown-menu">
 								<li><?php echo anchor('reports/invoice_aging', lang('invoice_aging')); ?></li>
@@ -157,6 +165,8 @@
                                 <li><?php echo anchor('item_lookups/index', lang('item_lookups')); ?></li>
 								<li><?php echo anchor('payment_methods/index', lang('payment_methods')); ?></li>
 								<li><?php echo anchor('tax_rates/index', lang('tax_rates')); ?></li>
+								<li><?php echo anchor('devises/index', "Type devises"); ?></li>
+								<li><?php echo anchor('depense_methods/index', "Catégorie Dépense"); ?></li>
 								<li><?php echo anchor('users/index', lang('user_accounts')); ?></li>
                                 <li class="divider"></li>
                                 <li><?php echo anchor('settings', lang('system_settings')); ?></li>
@@ -180,6 +190,7 @@
 				<li><a href="<?php echo site_url('quotes/index'); ?>"><img alt="" src="<?php echo base_url(); ?>assets/default/img/icons/quotes24x24.png" title="<?php echo lang('quotes'); ?>" /></a></li>
 				<li><a href="<?php echo site_url('invoices/index'); ?>"><img alt="" src="<?php echo base_url(); ?>assets/default/img/icons/invoices24x24.png" title="<?php echo lang('invoices'); ?>" /></a></li>
 				<li><a href="<?php echo site_url('payments/index'); ?>"><img alt="" src="<?php echo base_url(); ?>assets/default/img/icons/payments24x24.png" title="<?php echo lang('payments'); ?>" /></a></li>
+				<li><a href="<?php echo site_url('depenses/index'); ?>"><img alt="" src="<?php echo base_url(); ?>assets/default/img/icons/depense.png" title="Dépense" /></a></li>
 			</ul>
 
 		</div>
