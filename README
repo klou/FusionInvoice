@@ -1,0 +1,21 @@
+Version 1.0 FusionInvoice Expenses module.
+
+Author: Stéphane Tremblay (stephane@peacefuljourney.ca)
+
+This software was build over several months, tested and keep getting updated regularly with new features.
+
+I am like everybody else, with payments to do, if you are using this modules in a company and enjoy it.
+Please send a donation to my paypal account (email Above).
+
+Thank you.
+
+------------------------------------------------------
+
+Installation Instructions
+
+1) Add to your /index.php file those lines at the top inside the PHP bracket
+include("pChart/pData.class");
+include("pChart/pChart.class");
+
+
+TODO...
