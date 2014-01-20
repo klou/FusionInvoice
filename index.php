@@ -1,4 +1,14 @@
 <?php
+/*
+ *---------------------------------------------------------------
+ * FUSIONINVOICE-EXPENSES MODULE
+ * https://code.google.com/p/fusioninvoice-expenses-module/
+ *---------------------------------------------------------------
+ * Inclusions for generating dashboard charts
+ */
+ 
+ 	include("pChart/pData.class");
+	include("pChart/pChart.class");
 
 /*
  *---------------------------------------------------------------
