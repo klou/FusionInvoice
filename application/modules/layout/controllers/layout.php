@@ -10,8 +10,8 @@ if (!defined('BASEPATH'))
  *
  * @package		FusionInvoice
  * @author		Jesse Terry
- * @copyright	Copyright (c) 2012 - 2013 FusionInvoice, LLC
- * @license		http://www.fusioninvoice.com/license.txt
+ * @copyright	Copyright (c) 2012 - 2013, Jesse Terry
+ * @license		http://www.fusioninvoice.com/support/page/license-agreement
  * @link		http://www.fusioninvoice.com
  * 
  */
