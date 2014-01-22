@@ -432,7 +432,9 @@ $lang['expense_date'] = 'Expense Date';
 $lang['edit_category'] = 'Edit the Category';
 $lang['edit_currency'] = 'Edit the Currency';
 $lang['currencies'] = 'Currencies';
-
+$lang['cumulative_expenses'] = 'Cumulative Expenses';
+$lang['current_year'] = 'Current Year';
+$lang['comparison'] = 'Comparison';
 
 
 
