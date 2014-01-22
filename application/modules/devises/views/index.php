@@ -17,7 +17,7 @@
 
 	<thead>
 		<tr>
-			<th><?php echo lang('currencies'); ?></th>
+			<th><?php echo lang('currency'); ?></th>
 			<th><?php echo lang('tax'); ?></th>
 			<th><?php echo lang('options'); ?></th>
 		</tr>
