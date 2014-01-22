@@ -418,4 +418,22 @@ $lang['view_all'] = 'View All';
 /** New or changed for 1.3.3 tag **/
 $lang['documentation'] = 'Documentation';
 
+/** New or changed for Expenses module (includes MultiCurrency) **/
+$lang['expenses'] = 'Expenses';
+$lang['enter_expense'] = 'Enter Expense';
+$lang['view_expenses'] = 'View Expenses';
+$lang['expense_categories'] = 'Expense Categories';
+$lang['expense_category'] = 'Expense Category';
+$lang['currency_types'] = 'Currency Types';
+$lang['expense_form'] = 'Expense Form';
+$lang['currency'] = 'Currency';
+$lang['category'] = 'Category';
+$lang['expense_date'] = 'Expense Date';
+$lang['edit_category'] = 'Edit the Category';
+$lang['edit_currency'] = 'Edit the Currency';
+$lang['currencies'] = 'Currencies';
+
+
+
+
 ?>

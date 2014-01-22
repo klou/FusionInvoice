@@ -38,7 +38,7 @@
 <div id="enter-depense" class="modal hide fade">
 	<div class="modal-header">
 		<a data-dismiss="modal" class="close">×</a>
-		<h3>Nouvelle dépense</h3>
+		<h3><?php echo lang('enter_expense'); ?></h3>
 	</div>
 	<div class="modal-body">
 		<form class="form-horizontal">
@@ -53,7 +53,7 @@
 
 			<div class="control-group">
 
-				<label class="control-label">Date: </label>
+				<label class="control-label"><?php echo lang('date'); ?>: </label>
 				<div class="controls input-append date datepicker">
 					<input size="16" type="text" name="depense_date" id="depense_date" value="<?php echo date(date_format_setting()); ?>" readonly>
 					<span class="add-on"><i class="icon-th"></i></span>
@@ -63,7 +63,7 @@
 
 			<div class="control-group">
 
-				<label class="control-label">Catégorie: </label>
+				<label class="control-label"><?php echo lang('category'); ?>: </label>
 				<div class="controls">
 					<select name="depense_method_id" id="depense_method_id">
 						<option value=""></option>

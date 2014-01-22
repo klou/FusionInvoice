@@ -2,10 +2,10 @@
 
 	<thead>
 		<tr>
-			<th>Date dépense</th>
+			<th><?php echo lang('expense_date'); ?></th>
 			<th><?php echo lang('amount'); ?></th>
-			<th>Devise</th>
-			<th>Catégorie</th>
+			<th><?php echo lang('currency'); ?></th>
+			<th><?php echo lang('category'); ?></th>
 			<th><?php echo lang('note'); ?></th>
 			<th><?php echo lang('options'); ?></th>
 		</tr>

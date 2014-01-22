@@ -1,5 +1,5 @@
 <div class="headerbar">
-	<h1>Catégorie dépense</h1>
+	<h1><?php echo lang('expense_category'); ?></h1>
 
 	<div class="pull-right">
 		<a class="btn btn-primary" href="<?php echo site_url('depense_methods/form'); ?>"><i class="icon-plus icon-white"></i> <?php echo lang('new'); ?></a>
@@ -17,7 +17,7 @@
 
 	<thead>
 		<tr>
-			<th>Catégorie</th>
+			<th><?php echo lang('category'); ?></th>
 			<th><?php echo lang('options'); ?></th>
 		</tr>
 	</thead>

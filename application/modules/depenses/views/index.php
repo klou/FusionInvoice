@@ -1,5 +1,5 @@
 <div class="headerbar">
-	<h1>D&eacute;penses</h1>
+	<h1><?php echo lang('expenses'); ?></h1>
 
 	<div class="pull-right">
 		<a class="btn btn-primary" href="<?php echo site_url('depenses/form'); ?>"><i class="icon-plus icon-white"></i> <?php echo lang('new'); ?></a>

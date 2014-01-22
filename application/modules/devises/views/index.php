@@ -1,5 +1,5 @@
 <div class="headerbar">
-	<h1>Type de devises</h1>
+	<h1><?php echo lang('currency_types'); ?></h1>
 
 	<div class="pull-right">
 		<a class="btn btn-primary" href="<?php echo site_url('devises/form'); ?>"><i class="icon-plus icon-white"></i> <?php echo lang('new'); ?></a>
@@ -17,8 +17,8 @@
 
 	<thead>
 		<tr>
-			<th>Devises</th>
-			<th>Taux</th>
+			<th><?php echo lang('currencies'); ?></th>
+			<th><?php echo lang('tax'); ?></th>
 			<th><?php echo lang('options'); ?></th>
 		</tr>
 	</thead>

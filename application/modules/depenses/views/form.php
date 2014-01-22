@@ -18,7 +18,7 @@ $(function() {
     <?php } ?>
 
 	<div class="headerbar">
-		<h1>Dépense</h1>
+		<h1><?php echo lang('expense_form'); ?></h1>
 		<?php $this->layout->load_view('layout/header_buttons'); ?>
 	</div>
 
@@ -42,7 +42,7 @@ $(function() {
 			</div>
 
 			<div class="control-group">
-				<label class="control-label">Devise: </label>
+				<label class="control-label"><?php echo lang('currency'); ?>: </label>
 				<div class="controls">
 					<select name="iddevise">
 						<?php foreach ($devises as $devise) { ?>
@@ -58,7 +58,7 @@ $(function() {
 
 			<div class="control-group">
 
-				<label class="control-label">Catégorie: </label>
+				<label class="control-label"><?php echo lang('category'); ?>: </label>
 				<div class="controls">
 					<select name="depense_method_id">
 						<option value="0"></option>
