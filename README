@@ -19,3 +19,13 @@ include("pChart/pChart.class");
 
 
 TODO...
+
+OR!!!
+
+1) Clone this repository (Expenses branch) to your webfoot
+
+git clone -b Expenses --single-branch https://github.com/klou/FusionInvoice.git
+
+2) Execute the DTB_CHANGES.sql query to create tables.
+
+mysql -u yourusername -p yourpassword yourdatabase < DTB_CHANGES.sql
