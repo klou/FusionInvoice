@@ -22,7 +22,7 @@ TODO...
 
 OR!!!
 
-1) Clone this repository (Expenses branch) to your webfoot
+1) Clone this repository (Expenses branch) to your webroot
 
 git clone -b Expenses --single-branch https://github.com/klou/FusionInvoice.git
 
