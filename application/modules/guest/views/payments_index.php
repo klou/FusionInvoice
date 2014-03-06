@@ -7,32 +7,36 @@
 
 </div>
 
-<?php $this->layout->load_view('layout/alerts'); ?>
+<div class="table-content">
 
-<div id="filter_results">
-    <table class="table table-striped">
+    <?php $this->layout->load_view('layout/alerts'); ?>
 
-        <thead>
-            <tr>
-                <th><?php echo lang('date'); ?></th>
-                <th><?php echo lang('invoice'); ?></th>
-                <th><?php echo lang('amount'); ?></th>
-                <th><?php echo lang('payment_method'); ?></th>
-                <th><?php echo lang('note'); ?></th>
-            </tr>
-        </thead>
+    <div id="filter_results">
+        <table class="table table-striped">
 
-        <tbody>
-            <?php foreach ($payments as $payment) { ?>
-            <tr>
-                <td><?php echo date_from_mysql($payment->payment_date); ?></td>
-                <td><?php echo $payment->invoice_number; ?></td>
-                <td><?php echo format_currency($payment->payment_amount); ?></td>
-                <td><?php echo $payment->payment_method_name; ?></td>
-                <td><?php echo $payment->payment_note; ?></td>
-            </tr>
-            <?php } ?>
-        </tbody>
+            <thead>
+                <tr>
+                    <th><?php echo lang('date'); ?></th>
+                    <th><?php echo lang('invoice'); ?></th>
+                    <th><?php echo lang('amount'); ?></th>
+                    <th><?php echo lang('payment_method'); ?></th>
+                    <th><?php echo lang('note'); ?></th>
+                </tr>
+            </thead>
 
-    </table>
+            <tbody>
+                <?php foreach ($payments as $payment) { ?>
+                <tr>
+                    <td><?php echo date_from_mysql($payment->payment_date); ?></td>
+                    <td><?php echo $payment->invoice_number; ?></td>
+                    <td><?php echo format_currency($payment->payment_amount); ?></td>
+                    <td><?php echo $payment->payment_method_name; ?></td>
+                    <td><?php echo $payment->payment_note; ?></td>
+                </tr>
+                <?php } ?>
+            </tbody>
+
+        </table>
+    </div>
+
 </div>

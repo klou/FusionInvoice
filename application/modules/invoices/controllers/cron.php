@@ -51,7 +51,7 @@ class Cron extends Base_Controller {
                 );
 
                 // This is the new invoice id
-                $target_id = $this->mdl_invoices->create($db_array);
+                $target_id = $this->mdl_invoices->create($db_array, FALSE);
 
                 // Copy the original invoice to the new invoice
                 $this->mdl_invoices->copy_invoice($source_id, $target_id);

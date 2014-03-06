@@ -15,44 +15,48 @@
 
 </div>
 
-<div id="filter_results">
-    <table class="table table-striped">
+<div class="table-content">
 
-        <thead>
-            <tr>
-                <th><?php echo lang('invoice'); ?></th>
-                <th><?php echo lang('created'); ?></th>
-                <th><?php echo lang('due_date'); ?></th>
-                <th><?php echo lang('client_name'); ?></th>
-                <th><?php echo lang('amount'); ?></th>
-                <th><?php echo lang('balance'); ?></th>
-                <th><?php echo lang('options'); ?></th>
-            </tr>
-        </thead>
+    <div id="filter_results">
+        <table class="table table-striped">
 
-        <tbody>
-            <?php foreach ($invoices as $invoice) { ?>
-            <tr>
-                <td><a href="<?php echo site_url('guest/invoices/view/' . $invoice->invoice_id); ?>"><?php echo $invoice->invoice_number; ?></a></td>
-                <td><?php echo date_from_mysql($invoice->invoice_date_created); ?></td>
-                <td><?php echo date_from_mysql($invoice->invoice_date_due); ?></td>
-                <td><?php echo $invoice->client_name; ?></td>
-                <td><?php echo format_currency($invoice->invoice_total); ?></td>
-                <td><?php echo format_currency($invoice->invoice_balance); ?></td>
-                <td>
-                    <a href="<?php echo site_url('guest/invoices/view/' . $invoice->invoice_id); ?>" class="btn btn-small">
-                        <i class="icon-eye-open"></i> <?php echo lang('view'); ?>
-                    </a>
+            <thead>
+                <tr>
+                    <th><?php echo lang('invoice'); ?></th>
+                    <th><?php echo lang('created'); ?></th>
+                    <th><?php echo lang('due_date'); ?></th>
+                    <th><?php echo lang('client_name'); ?></th>
+                    <th><?php echo lang('amount'); ?></th>
+                    <th><?php echo lang('balance'); ?></th>
+                    <th><?php echo lang('options'); ?></th>
+                </tr>
+            </thead>
 
-                    <a href="<?php echo site_url('guest/invoices/generate_pdf/' . $invoice->invoice_id); ?>" class="btn btn-small">
-                        <i class="icon-print"></i> <?php echo lang('pdf'); ?>
-                    </a>
-                    
-                    <?php if ($this->mdl_settings->setting('merchant_enabled') == 1 and $invoice->invoice_balance > 0) { ?><a href="<?php echo site_url('guest/payment_handler/make_payment/' . $invoice->invoice_url_key); ?>" class="btn btn-small btn-success"><i class="icon-white icon-ok"></i> <?php echo lang('pay_now'); ?></a><?php } ?>
-                </td>
-            </tr>
-            <?php } ?>
-        </tbody>
+            <tbody>
+                <?php foreach ($invoices as $invoice) { ?>
+                <tr>
+                    <td><a href="<?php echo site_url('guest/invoices/view/' . $invoice->invoice_id); ?>"><?php echo $invoice->invoice_number; ?></a></td>
+                    <td><?php echo date_from_mysql($invoice->invoice_date_created); ?></td>
+                    <td><?php echo date_from_mysql($invoice->invoice_date_due); ?></td>
+                    <td><?php echo $invoice->client_name; ?></td>
+                    <td><?php echo format_currency($invoice->invoice_total); ?></td>
+                    <td><?php echo format_currency($invoice->invoice_balance); ?></td>
+                    <td>
+                        <a href="<?php echo site_url('guest/invoices/view/' . $invoice->invoice_id); ?>" class="btn btn-small">
+                            <i class="icon-eye-open"></i> <?php echo lang('view'); ?>
+                        </a>
 
-    </table>
+                        <a href="<?php echo site_url('guest/invoices/generate_pdf/' . $invoice->invoice_id); ?>" class="btn btn-small">
+                            <i class="icon-print"></i> <?php echo lang('pdf'); ?>
+                        </a>
+                        
+                        <?php if ($this->mdl_settings->setting('merchant_enabled') == 1 and $invoice->invoice_balance > 0) { ?><a href="<?php echo site_url('guest/payment_handler/make_payment/' . $invoice->invoice_url_key); ?>" class="btn btn-small btn-success"><i class="icon-white icon-ok"></i> <?php echo lang('pay_now'); ?></a><?php } ?>
+                    </td>
+                </tr>
+                <?php } ?>
+            </tbody>
+
+        </table>
+    </div>
+
 </div>

@@ -94,7 +94,7 @@
                 <select name="email_template" id="email_template">
                     <option value=""></option>
                     <?php foreach ($email_templates as $email_template) { ?>
-                    <option value="<?php echo $email_template->email_template_id; ?>" <?php if ($this->mdl_settings->setting('default_email_template') == $email_template->email_template_id) { ?>selected="selected"<?php } ?>><?php echo $email_template->email_template_title; ?></option>
+                    <option value="<?php echo $email_template->email_template_id; ?>" <?php if ($this->mdl_settings->setting('email_quote_template') == $email_template->email_template_id) { ?>selected="selected"<?php } ?>><?php echo $email_template->email_template_title; ?></option>
                     <?php } ?>
                 </select>
             </div>
